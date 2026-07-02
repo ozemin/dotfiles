@@ -53,3 +53,4 @@ bindkey "^[[1;9C" end-of-line
 # Plugins
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$(go env GOPATH)/bin:$PATH"

@@ -1,27 +1,46 @@
-# Appearence
+# Appearance
 theme = TokyoNight
 background-opacity = 0.98
 background-blur = 40
-mouse-hide-while-typing= true
-macos-option-as-alt = false
+window-colorspace = display-p3
+macos-icon = xray
+
+# Font
+font-family = "TX-02"
+font-size = 14
+adjust-cell-height = 35%
+font-thicken = true
+
+# Cursor
+cursor-style = underline
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+# Window
 macos-titlebar-style = hidden
 window-padding-y = 0
 window-padding-balance = true
 window-padding-color = extend-always
-cursor-style = underline
-clipboard-paste-protection = true
-copy-on-select = true
 window-save-state = always
-window-colorspace = display-p3
-scroll-to-bottom = output
-link-previews = true
-
-# Font
-font-family = "TX-02"
-font-size = 18
-adjust-cell-height = 35%
-font-thicken = true
-macos-icon = xray
+window-new-tab-position = end
+unfocused-split-opacity = 0.85
 working-directory = home
 window-inherit-working-directory = true
+
+# Scrollback & mouse
+scrollback-limit = 100000000
+scroll-to-bottom = output
+mouse-hide-while-typing = true
+link-previews = true
+
+# Clipboard
+copy-on-select = clipboard
+clipboard-paste-protection = true
+
+# Misc
+macos-option-as-alt = false
+auto-update = download
+
+# Keybinds
 keybind = shift+enter=text:\x1b\r
+keybind = global:cmd+grave_accent=toggle_quick_terminal

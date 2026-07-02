@@ -1,5 +1,6 @@
 {
   // ===== APPEARANCE & THEMES =====
+  "cli_default_open_behavior": "new_window",
   "agent_ui_font_size": 18.0,
   "agent": {
     "button": false,
@@ -13,8 +14,7 @@
       "proxy": null,
       "proxy_no_verify": null,
       "enterprise_uri": null
-    },
-    "enabled_in_text_threads": false
+    }
   },
   "theme": {
     "mode": "dark",
@@ -22,22 +22,22 @@
     "dark": "Catppuccin Mocha"
   },
   "theme_overrides": {
-    "Tokyo Night": {
+    "Catppuccin Mocha": {
       "editor.document_highlight.read_background": "#00000000",
       "editor.document_highlight.write_background": "#00000000"
     }
   },
-  "icon_theme": "Catppuccin Latte",
+  "icon_theme": "Material Icon Theme",
   // ===== FONTS & TYPOGRAPHY =====
   "buffer_font_family": "TX-02",
-  "buffer_font_size": 18,
+  "buffer_font_size": 16,
   "buffer_font_weight": 400,
   "buffer_line_height": {
     "custom": 2
   },
   "ui_font_family": "TX-02",
   "ui_font_size": 18,
-  "ui_font_weight": 200,
+  "ui_font_weight": 400,
   // ===== EDITOR BEHAVIOR =====
   "base_keymap": "VSCode",
   "vim_mode": false,
@@ -138,19 +138,16 @@
   "collaboration_panel": {
     "button": false
   },
-  "notification_panel": {
-    "button": false
-  },
   "terminal": {
     "font_weight": 400.0,
-    "font_family": "Monaspace Neon NF",
+    "font_family": "TX-02",
     "button": false
   },
   "debugger": {
     "button": false
   },
   "status_bar": {
-    "experimental.show": false
+    "experimental.show": true
   },
   "file_finder": {
     "modal_max_width": "large"
@@ -179,19 +176,23 @@
   "disable_ai": true,
   // ===== FILE HANDLING =====
   "file_scan_exclusions": [
-    ".ruff_cache",
-    ".idea",
-    ".ropeproject",
-    "**.git",
-    "__pycache__",
-    "**.zed",
-    "**.DS_Store",
-    "**mypy_cache",
+    "**/.git",
     "**/.svn",
     "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
     "**/Thumbs.db",
-    ".pytest_cache",
-    ".venv"
+    "**/.classpath",
+    "**/.settings",
+    "**/.idea",
+    "**/.zed",
+    "**/.venv",
+    "**/__pycache__",
+    "**/.pytest_cache",
+    "**/.mypy_cache",
+    "**/.ruff_cache",
+    "**/.ropeproject"
   ],
   "file_types": {
     "Helm": [
@@ -206,7 +207,7 @@
         "ruff",
         "pyright"
       ],
-      "format_on_save": "off",
+      "format_on_save": "on",
       "formatter": [
         {
           "code_action": "source.organizeImports.ruff"

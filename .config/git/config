@@ -23,8 +23,36 @@
 [interactive]
     diffFilter = delta --color-only
 
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
+
+[push]
+    autoSetupRemote = true
+
+[fetch]
+    prune = true
+
 [merge]
-    conflictstyle = diff3
+    conflictstyle = zdiff3
 
 [diff]
     colorMoved = default
+    algorithm = histogram
+
+[rerere]
+    enabled = true
+
+[branch]
+    sort = -committerdate
+
+[credential]
+    helper = osxkeychain
+
+[alias]
+    st = status
+    co = checkout
+    unstage = restore --staged
+    last = log -1 HEAD
